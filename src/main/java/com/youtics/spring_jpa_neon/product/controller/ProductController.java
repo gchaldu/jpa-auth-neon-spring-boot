@@ -21,7 +21,7 @@ public class ProductController {
         return service.getAllProducts();
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public Product createProduct(@RequestBody Product product){
         return service.createProduct(product);
     }

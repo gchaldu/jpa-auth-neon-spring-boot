@@ -3,10 +3,11 @@ package com.youtics.spring_jpa_neon.product.service;
 import com.youtics.spring_jpa_neon.product.model.Product;
 import com.youtics.spring_jpa_neon.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository repository;
